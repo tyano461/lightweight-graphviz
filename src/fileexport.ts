@@ -1,13 +1,19 @@
 import * as vscode from 'vscode'
-
 import { IsDotFile, convertSVG } from './convert'
 import * as fs from 'fs'
 import { basename, dirname } from 'path'
 import * as path from 'path'
 
+/**
+ * Provide File Exporting
+ */
 export class LWFileExport {
   private saving = false
 
+  /**
+   * Convert content written in graphviz format to SVG file and save it
+   * @returns void
+   */
   public Save (): void {
     const editor = vscode.window.activeTextEditor
     if (editor == null) {
@@ -45,6 +51,11 @@ export class LWFileExport {
     })
   }
 
+  /**
+   * get directory path for output
+   * @param fname graphviz file path
+   * @returns directory path to export
+   */
   private ofdir (fname: string): string {
     const config = vscode.workspace.getConfiguration()
     let want = '../images/'
@@ -72,6 +83,11 @@ export class LWFileExport {
     return d
   }
 
+  /**
+   * get file name for export
+   * @param fname graphviz file path
+   * @returns output file name
+   */
   private ofname (fname: string): string {
     return basename(fname, '.dot') + '.svg'
   }

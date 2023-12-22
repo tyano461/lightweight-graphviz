@@ -1,11 +1,17 @@
 import * as vscode from 'vscode'
 import { convertSVG } from './convert'
 
+/**
+ * provide graphviz preview to side column
+ */
 export class LWPreview extends vscode.Disposable {
   private readonly panel: vscode.WebviewPanel | undefined
   private doing = false
   private valid = true
 
+  /**
+   * Set parameters to respond when the preview window is closed
+   */
   public constructor () {
     super(() => { })
     this.panel = vscode.window.createWebviewPanel(
@@ -25,10 +31,18 @@ export class LWPreview extends vscode.Disposable {
     console.log('valid:' + this.valid)
   }
 
+  /**
+   * whether preview window is available
+   * @returns available or not
+   */
   public IsValid (): boolean {
     return this.valid
   }
 
+  /**
+   * Update Preview Window
+   * @returns void
+   */
   public Refresh (): void {
     if (this.doing) {
       console.log('doing')
