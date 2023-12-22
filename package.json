@@ -1,4 +1,6 @@
 {
+  "publisher": "tyano462",
+  "icon": "images/icon.png",
   "name": "lightweight-graphviz",
   "displayName": "Lightweight Graphviz",
   "description": "very light-weight",
@@ -21,6 +23,23 @@
         "command": "lightweight-graphviz.export",
         "title": "LW Graphviz Export(SVG)"
       }
+    ],
+    "configuration": [
+      {
+        "title": "Lightweight Graphviz",
+        "properties": {
+          "lightweight.graphviz_path": {
+            "type": "string",
+            "default": "",
+            "description": "Path for installed Graph layout programs"
+          },
+          "lightweight.output_directory": {
+            "type": "string",
+            "default": "",
+            "description": "Path to the directory to output the converted SVG file"
+          }
+        }
+      }
     ]
   },
   "scripts": {
@@ -32,14 +51,18 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.85.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3",
     "@vscode/test-cli": "^0.0.4",
-    "@vscode/test-electron": "^2.3.8"
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.5.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.3.3"
   }
 }
