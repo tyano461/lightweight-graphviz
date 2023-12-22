@@ -14,8 +14,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "lightweight-graphviz.helloWorld",
-        "title": "Hello World"
+        "command": "lightweight-graphviz.preview",
+        "title": "LW Graphviz Preview"
+      },
+      {
+        "command": "lightweight-graphviz.export",
+        "title": "LW Graphviz Export(SVG)"
       }
     ]
   },
