@@ -5,6 +5,10 @@
   "displayName": "Lightweight Graphviz",
   "description": "very light-weight",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyano461/lightweight-graphviz.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
