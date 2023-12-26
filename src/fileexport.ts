@@ -62,11 +62,10 @@ export class LWFileExport {
     let absolute = false
     if (config != null) {
       const srel: string | undefined = config.get('lightweight.output_directory')
+      console.log('lightweight.output_directory:' + srel)
       if (srel != null && srel.length > 0) {
         absolute = path.isAbsolute(srel)
-        if (absolute) {
-          want = srel
-        }
+        want = srel
       }
     }
     if (absolute) return want
@@ -79,6 +78,7 @@ export class LWFileExport {
         }
       })
     }
+    console.log('out:' + d)
 
     return d
   }

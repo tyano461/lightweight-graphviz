@@ -15,13 +15,16 @@ You will need to install graphviz in advance.
 output svg file.
 
 ## Extension Settings
-no settings
+![preview](images/lwgraphviz_command.png)
+
+- LW Graphviz Preview
+Preview the image converted from dot file to svg.
+- LW Graphviz Export(SVG)
+Convert dot file to svg and output file.
 
 ## Known Issues
 Operation on Windows has not been confirmed.
 
 ## Release Notes
 
-### 1.0.0
-
-Initial release of light-weight graphviz preview
+See [Changelog](CHANGELOG.md)
