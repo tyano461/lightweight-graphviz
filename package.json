@@ -4,7 +4,7 @@
   "name": "lightweight-graphviz",
   "displayName": "Lightweight Graphviz",
   "description": "very light-weight",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/tyano461/lightweight-graphviz.git"
