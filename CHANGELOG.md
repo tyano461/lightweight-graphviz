@@ -4,6 +4,13 @@ All notable changes to the "lightweight-graphviz" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.0.4
+- Drag scroll
+- Zoom In/Out with Ctrl key
+
+## 0.0.3
+- Fix document
+
 ## 0.0.2
 - Fix output directory settings
 - Fix document
